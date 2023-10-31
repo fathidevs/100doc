@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DayFourController;
 use App\Http\Controllers\DayThreeController;
 use App\Http\Controllers\DayFiveController;
+use App\Http\Controllers\DayEightController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +42,7 @@ Route::get('/grt/{nm}', function ($nm) {
 })->name('g');
 
 // route to day 3
-Route::get('d3/', [DayThreeController::class, 'show']);
+Route::get('/d3', [DayThreeController::class, 'show']);
 
 
 // DAY 4
@@ -50,3 +51,7 @@ Route::get('/d4', [DayFourController::class, 'show']);
 
 # DAY 5
 Route::get('/d5', [DayFiveController::class, 'show']);
+
+# day 8
+Route::post('/d8/reg', [DayEightController::class, 'register'])->name('form.register');
+Route::get('/d8', [DayEightController::class, 'showForm'])->name('form.show');

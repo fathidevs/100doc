@@ -14,7 +14,7 @@
         <li><a href="{{ url('/d3') }}">Day 3</a></li>
         <li><a href="{{ url('/d4') }}">Day 4</a></li>
         <li><a href="{{ url('/d5') }}">Day 5</a></li>
-        
+        <li><a href="{{ url('/d8') }}">Day 8</a></li>
     </ul>
 </body>
 </html>
